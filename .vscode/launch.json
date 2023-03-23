@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Movies Dev",
+      "request": "launch",
+      "type": "dart",
+      // "preLaunchTask": "CheckCoverage_And_Analyze",
+      "program": "lib/main/main_dev.dart",
+      "args": [
+        "--flavor",
+        "dev",
+        "--dart-define=API_BASE_URL=https://api.themoviedb.org/3/movie/popular?api_key=259ce3bf9e5c2423b37272e681db6723&language=en-US",
+      ]
+    },
+    {
+      "name": "Movies Prod",
+      "request": "launch",
+      "type": "dart",
+      // "preLaunchTask": "CheckCoverage_And_Analyze",
+      "program": "lib/main/main_prod.dart",
+      "args": [
+        "--flavor",
+        "prod",
+        "--dart-define=API_BASE_URL=https://api.themoviedb.org/3/movie/popular?api_key=259ce3bf9e5c2423b37272e681db6723&language=en-US",
+      ]
+    },
+  ]
+}
